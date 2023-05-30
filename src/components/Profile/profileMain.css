@@ -1,0 +1,64 @@
+.profile-main__row h4{
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+    color: #070C11;
+    padding: 0 0 20px 0;
+}
+
+.profile-main__info-avatart img{
+    width: 100px;
+    height: 100px;
+}
+
+.profile-main__info{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: #070C11;
+}
+.profile-main__info div{
+    padding: 0 0 10px 30px;
+}
+
+.profile-main__row p{
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #070C11;
+    max-width: 535px;
+    padding: 15px 0 20px 0;
+}
+
+.profile-main__info-avatart{
+    display: flex;
+    align-items: center;
+}
+
+.profile-main .btn{
+    padding: 15.5px;
+    width: 310px;
+    height: 48px;
+    text-align: center;
+}
+
+.profil-hero{
+    display: flex;
+}
+
+.profile-main{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .profile-main .btn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,24 @@
+.ui.form input[type=file] {
+    padding: 7px 0 6px 11px;
+}
+
+.field .btn{
+    padding: 0.67857143em 1em;
+    text-align: center;
+    margin: 24px 0 0 0;
+    width: 100%;
+    vertical-align: top;
+}
+
+.profil-hero{
+    display: flex;
+}
+
+.percona-data{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ui.form input:not([type]), .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=email], .ui.form input[type=file], .ui.form input[type=number], .ui.form input[type=password], .ui.form input[type=search], .ui.form input[type=tel], .ui.form input[type=text], .ui.form input[type=time], .ui.form input[type=url] {
+    min-width: 350px;
+}

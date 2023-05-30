@@ -1,0 +1,72 @@
+.ui.styled.accordion .accordion .title, .ui.styled.accordion .title {
+    color: black;
+    
+}
+
+.accordion__title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ui.accordion .accordion .title .dropdown.icon, .ui.accordion .title .dropdown.icon {
+    transform: rotate(-180deg);
+}
+
+
+
+.profile-accordion{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 100px;
+    border: 1px;
+    border: 1px solid #EAEAF0;
+    border-radius: 8px;
+    width: 810px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.accordion__title{
+    font-family: 'Exo 2';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 130%;
+
+color: #070C11;
+}
+.accordion__data{
+    color: #8b8b8e;
+}
+
+.accordion__expectation{
+    color: #22A44E;
+}
+
+@media (max-width: 768px) {
+    .profile-accordion {
+        padding: 0;
+        width: 40em
+    }
+}
+@media (max-width: 600px) {
+    .profile-accordion {
+        border-radius: 0px;
+    }
+    .ui.styled.accordion .accordion .title, .ui.styled.accordion .title {
+        padding: 0 0 15px 0;
+    }
+    .accordion__sub-title{
+        display: flex;
+        flex-direction: column;
+    }
+    .profile-accordion {
+        border: none;
+        width:100%;
+        text-align: center;
+    }
+    .profile-accordion span{
+        padding: 5px;
+    }
+}

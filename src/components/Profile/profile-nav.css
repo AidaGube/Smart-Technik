@@ -1,0 +1,19 @@
+.profile-nav{
+    display: flex;
+    align-items: baseline;
+}
+.profile-nav h4{
+    padding: 0 15px 0 15px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #070C11;
+}
+.profile-nav h4:first-child{
+    padding: 0 15px 0 0;
+}
+.profile-nav h4:last-child{
+    color: #838688;
+}

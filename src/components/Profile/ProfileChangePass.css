@@ -1,0 +1,31 @@
+.field{
+    position: relative;
+}
+
+.field svg{
+    position: absolute;
+    left: 90%;
+    top: 7px;
+}
+
+.percona-Change{
+    margin-left: 135px;
+}
+
+@media (max-width: 768px) {
+    .percona-Change {
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .ui.form input:not([type]), .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=email], .ui.form input[type=file], .ui.form input[type=number], .ui.form input[type=password], .ui.form input[type=search], .ui.form input[type=tel], .ui.form input[type=text], .ui.form input[type=time], .ui.form input[type=url] {
+        min-width:0;
+    }
+    .field svg{
+        position: absolute;
+        left: 85%;
+        top: 7px;
+    }
+}
+@media (max-width: 320px) {}
+
