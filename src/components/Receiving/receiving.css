@@ -1,0 +1,17 @@
+.receiving-from {
+    width: 800px;
+    border: 1px solid #c8cacb;
+    border-radius: 8px;
+    padding: 50px 30px;
+}
+.receiving {
+    display: flex;
+}
+.ui .form .four .wide .field {
+    width: 50% !important;
+    margin: 0 5px;
+}
+.text-comment {
+    resize: none;
+    margin: 0 0 20px;
+}
