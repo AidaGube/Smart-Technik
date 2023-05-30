@@ -1,0 +1,67 @@
+.card-side-bar {
+    background-color: #edf2f6;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 0 20px;
+    width: 420px;
+    height: 350px;
+    margin-top: 150px;
+}
+.other {
+    display: flex;
+    flex-direction: column;
+}
+.other-content {
+    display: flex;
+    justify-content: space-between;
+}
+.other-content p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+.other-content span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+.totocalPrice-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0 20px;
+}
+.totocalPrice {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.totocalPrice h2 {
+    margin: 0;
+}
+.totocalPrice span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+}
+.bar-content div {
+    display: flex;
+    justify-content: space-between;
+}
+.bar-content-div {
+    border-bottom: 1px solid #c8cacb;
+    margin-bottom: 20px;
+}
+.bar-content h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+}
+.total-price {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+}
+.card-checkbox {
+    margin: 20px 0px;
+}
