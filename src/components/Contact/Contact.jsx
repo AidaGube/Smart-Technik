@@ -1,6 +1,6 @@
 import React from 'react'
 import "./style.css"
-import Item from '../../../../../react/smart-redux git/src/components/Contact/Item'
+import Item from '../../components/Contact/Item'
 import mail from "../../assets/images/mail.svg";
 import clock from "../../assets/images/clock.svg";
 
