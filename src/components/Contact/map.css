@@ -1,0 +1,41 @@
+/* .container_contact{
+ margin: 120px 0 50px;
+} */
+
+.container__map {
+/* margin: 5px 0px 20px 0px; */
+width: 70%;
+}
+
+.contact__row{
+    display: flex;
+    margin-top: 20px;
+}
+
+.map__row{
+margin-left: 20px;
+z-index: 100;
+}
+@media (max-width: 726px) {
+  .map__row {
+    margin: 0 auto;
+    z-index: 100;
+  }
+}
+
+@media (max-width: 726px) {
+    .contact__row {
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        margin-bottom: 40px;
+    }
+  }
+  
+@media (max-width: 726px) {
+  .container__map {
+    margin: 5px 0px 20px 0px;
+    width: 100%;
+    
+    }
+}
