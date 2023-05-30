@@ -1,0 +1,83 @@
+.btn {
+  background: #2a5275;
+  border-radius: 4px;
+  color: #fff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  text-align: center;
+}
+.btn:hover {
+  background-color: #285882;
+}
+.btn:active {
+  transform: translateY(1px);
+  transition: all 0.1s ease;
+}
+.header__btn {
+  padding: 16px 26px;
+}
+
+.btn.light {
+  background-color: white;
+  border: 1px solid #4878a6;
+  color: #4878a6;
+}
+.btn.light.gray {
+  border: 1px solid #c8cacb;
+  color: #c8cacb;
+}
+.btn.light.gray:hover {
+  border: 1px solid #c8cacb;
+  background-color: transparent;
+  color: #c8cacb;
+}
+.btn.light:hover {
+  background-color: #4878a6;
+  color: white;
+}
+.btn.light-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.btn.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  min-height: 48px;
+}
+.admin__buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+}
+@media (max-width: 768px) {
+  .admin__buttons {
+    bottom: 90px;
+    right: 5px;
+  }
+}
+.add__buttons {
+  display: none;
+  gap: 10px;
+  padding-right: 10px;
+}
+
+.parrent:hover + .add__buttons {
+  display: flex;
+}
+.add__buttons:hover {
+  display: flex;
+}
+.detail {
+  margin-left: 10px;
+}
