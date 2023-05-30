@@ -1,0 +1,13 @@
+.category__content {
+  margin: 40px 0;
+}
+.category__content h1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.category__content span {
+  color: #2a5274;
+  font-weight: 400;
+  font-size: 19px;
+}
