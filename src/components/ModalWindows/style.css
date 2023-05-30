@@ -1,0 +1,330 @@
+.modal__window {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #2a527566;
+  z-index: 100;
+  transition: all ease 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+.modal__window.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ========== SearchBar ========== */
+
+.modal__window.active .search__bar {
+  transform: translateY(0);
+}
+.search__bar {
+  width: 100%;
+  background: #fff;
+  padding: 17px 0;
+  transform: translateY(-200%);
+  transition: all 0.3s ease;
+}
+.search__bar-header p {
+  display: none;
+}
+@media (max-width: 768px) {
+  .search__bar-header p {
+    display: block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 130%;
+    color: #070c11;
+  }
+  .search__window {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .search__bar {
+    height: 90vh;
+    width: 90%;
+    padding: 50px;
+    transform: translateY(200%);
+    border-radius: 10px 10px 0 0;
+  }
+  .search__bar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 44px;
+  }
+  .search__bar-content {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 505px) {
+  .search__bar {
+    width: 100%;
+    padding: 20px;
+  }
+  .search__bar-header {
+    margin-bottom: 20px;
+  }
+}
+.search__bar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.searched__results {
+  position: absolute;
+  top: 135%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #fff;
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.searched__results-item {
+  padding: 15px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .searched__results {
+    width: 100%;
+    box-shadow: none;
+    top: 110%;
+  }
+}
+.searched__results-item:hover {
+  background-color: #edf2f6;
+}
+.search__bar-content input {
+  width: 100%;
+  padding: 14px 20px;
+  border: 1px solid #4878a6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+}
+.search__bar-content form {
+  width: 100%;
+}
+.close-icon {
+  cursor: pointer;
+}
+
+/* ========== Login ========== */
+.login__modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login__modal.active .login__modal-content {
+  transform: scale(1);
+  opacity: 1;
+}
+.login__modal-content {
+  background: #ffffff;
+  border-radius: 8px;
+  transform: scale(0);
+  opacity: 0;
+  transition: all ease 0.3s;
+  max-width: 310px;
+  width: 310px;
+}
+.content__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #edf2f6;
+  border-radius: 8px 8px 0 0;
+}
+.content__header p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 130%;
+  color: #070c11;
+}
+.header__text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  color: #070c11;
+}
+.login__form {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 30px 30px;
+  /* max-width: 310px; */
+  /* width: 310px; */
+}
+.form__input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.form__input label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #070c11;
+}
+.form__input input {
+  margin-top: 8px;
+  background: #ffffff;
+  border: 1px solid #eaeaf0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  height: 48px;
+  width: 100%;
+  padding: 10px;
+}
+.form__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #4878a6;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.form__text.register {
+  color: #070c11;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.form__text.center {
+  text-align: center;
+}
+.form__checkbox {
+  margin: 20px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.form__button {
+  padding: 16px 0;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 500px) {
+  .login__modal {
+    align-items: flex-end;
+  }
+  .login__modal-content {
+    width: 100%;
+    max-width: 100%;
+    transform: translateY(200%);
+    opacity: 1;
+    margin-bottom: 85px;
+  }
+}
+/* ========== Catalog ========== */
+
+.catalog__window {
+  display: none;
+  justify-content: center;
+  align-items: flex-end;
+}
+@media (max-width: 768px) {
+  .catalog__window {
+    display: flex;
+  }
+}
+.catalog__window.active .catalog__window-content {
+  transform: translateY(0);
+}
+.catalog__window-content {
+  background: #edf2f6;
+  border-radius: 8px 8px 0px 0px;
+  width: 90%;
+  position: relative;
+  height: 90vh;
+  padding: 50px;
+  transform: translateY(200%);
+  transition: all ease 0.3s;
+}
+.catalog__window-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.catalog__window-header p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 130%;
+  color: #070c11;
+}
+
+@media (max-width: 500px) {
+  .catalog__window-content {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+/* ========== More ========== */
+.more__window {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.more__window.active .more__window-content {
+  transform: translateY(0);
+}
+
+.more__window-content {
+  background: #edf2f6;
+  border-radius: 8px 8px 0px 0px;
+  width: 90%;
+  height: 90vh;
+  padding: 50px;
+  transform: translateY(200%);
+  transition: all ease 0.3s;
+}
+
+@media (max-width: 500px) {
+  .more__window-content {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+.with__google {
+  margin: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+.with__google img {
+  width: 24px;
+  height: 24px;
+}
+
+.more__icons {
+  gap: 20px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  display: none;
+}
+@media (max-width: 500px) {
+  .more__icons {
+    display: flex;
+  }
+}
