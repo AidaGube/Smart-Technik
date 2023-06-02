@@ -5,10 +5,10 @@ Together with a team of 5 people, we created a full-fledged project for an elect
 ## Main features:
 
 <ol>
-   <li> Authentication: sign up, sign in, sign in with Google</li>
-   <li> </li>
- 
-   <li></li>
+   <li>Product Catalog: Creating a functional catalog for viewing and filtering products.</li>
+   <li>Shopping cart: Implementation of the possibility of adding, changing and deleting items from the shopping cart.</li>
+   <li>Authorization and accounts: Creation of an authentication system and user profile management.</li>
+   <li>Ratings and reviews: The ability to evaluate and leave reviews about products.</li>
  </ol>
 
 ## Stack:
